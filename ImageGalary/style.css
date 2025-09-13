@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    outline: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    margin: 30px auto;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container img {
+    width: 250px;
+    height: 170px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.container img:hover {
+  transform: translateY(-10px); /* move image upwards */
+}
+
+.show_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.show_img img{
+    width: 350px;
+    height: 350px;
+}
