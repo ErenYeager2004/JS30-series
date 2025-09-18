@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="style.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="container">
+        <button type="submit" class="btn">
+            Submit
+        </button>
+        <div class="popup">
+            <img src="images/404-tick.png">
+            <h2>Thank You</h2>
+            <p>Your details has been succesfully submitted, Thanks!</p>
+            <button type="button" class="btn2">Ok</button>
+        </div>
+    </div>
+    <script>
+        let popup = document.querySelector(".popup");
+        document.querySelector(".btn").addEventListener("click",()=>{
+            popup.classList.add("open-popup");
+        });
+
+        document.querySelector(".btn2").addEventListener("click", ()=>{
+            popup.classList.remove("open-popup");
+        });
+    </script>
 </body>
+
 </html>
